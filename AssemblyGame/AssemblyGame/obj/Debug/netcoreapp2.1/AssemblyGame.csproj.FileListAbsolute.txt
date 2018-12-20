@@ -1,0 +1,11 @@
+/Users/chris07/Projects/AssemblyGame/AssemblyGame/bin/Debug/netcoreapp2.1/AssemblyGame.deps.json
+/Users/chris07/Projects/AssemblyGame/AssemblyGame/bin/Debug/netcoreapp2.1/AssemblyGame.runtimeconfig.json
+/Users/chris07/Projects/AssemblyGame/AssemblyGame/bin/Debug/netcoreapp2.1/AssemblyGame.runtimeconfig.dev.json
+/Users/chris07/Projects/AssemblyGame/AssemblyGame/bin/Debug/netcoreapp2.1/AssemblyGame.dll
+/Users/chris07/Projects/AssemblyGame/AssemblyGame/bin/Debug/netcoreapp2.1/AssemblyGame.pdb
+/Users/chris07/Projects/AssemblyGame/AssemblyGame/obj/Debug/netcoreapp2.1/AssemblyGame.csprojAssemblyReference.cache
+/Users/chris07/Projects/AssemblyGame/AssemblyGame/obj/Debug/netcoreapp2.1/AssemblyGame.csproj.CoreCompileInputs.cache
+/Users/chris07/Projects/AssemblyGame/AssemblyGame/obj/Debug/netcoreapp2.1/AssemblyGame.AssemblyInfoInputs.cache
+/Users/chris07/Projects/AssemblyGame/AssemblyGame/obj/Debug/netcoreapp2.1/AssemblyGame.AssemblyInfo.cs
+/Users/chris07/Projects/AssemblyGame/AssemblyGame/obj/Debug/netcoreapp2.1/AssemblyGame.dll
+/Users/chris07/Projects/AssemblyGame/AssemblyGame/obj/Debug/netcoreapp2.1/AssemblyGame.pdb
