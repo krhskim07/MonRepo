@@ -1,7 +1,7 @@
 ﻿using System;
 namespace AssemblyGame
 {
-    class Histoire
+    class Debut
     {
         public static void BeforeControleur()
         {

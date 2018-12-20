@@ -31,17 +31,22 @@ namespace AssemblyGame
             return s;
         }
 
-        public void Afficher(Hero hero)
+        public void Afficher(Hero hero, Controleur controleur1)
         {
             for (int i = 0; i < Largeur; i++)
             {
                 Console.WriteLine();
                 for (int j = 0; j < Longueur; j++)
                 {
-                    if (hero.X == i && hero.Y == j)
+                    if (hero.X == j && hero.Y == i)
                     {
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.Write("[ P ]");
+                    }
+                    else if (controleur1.X == j && controleur1.Y == i)
+                    {
+                        Console.ForegroundColor = ConsoleColor.DarkGray;
+                        Console.Write("[ C ]");
                     }
                     else
                     {
@@ -50,10 +55,6 @@ namespace AssemblyGame
                     }
                 }
             }
-
-
-
-
         }
     }
 }

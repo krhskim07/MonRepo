@@ -1,7 +1,7 @@
 ﻿using System;
 namespace AssemblyGame
 {
-    class Person
+    class Personnage
     {
         public string Name;
         public int Attack;
@@ -9,7 +9,7 @@ namespace AssemblyGame
         public int X;
         public int Y;
 
-        public Person(string name, int attack, int health, int x, int y)
+        public Personnage(string name, int attack, int health, int x, int y)
         {
             Name = name;
             Attack = attack;
@@ -34,7 +34,7 @@ namespace AssemblyGame
             Console.WriteLine();
         }
 
-        public void NormAttack(Person target)
+        public void NormAttack(Personnage target)
         {
             target.Health -= Attack;
         }

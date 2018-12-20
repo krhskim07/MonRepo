@@ -57,6 +57,7 @@ namespace AssemblyGame
         //Fonction askChoice
         private static int AskChoice(int min, int max)
         {
+
             int result = int.Parse(Console.ReadLine());
             while (result > max || result < min)
             {
@@ -90,7 +91,7 @@ namespace AssemblyGame
             Console.ReadKey();
             Console.ForegroundColor = ConsoleColor.DarkCyan;
             Console.WriteLine("");
-            Console.WriteLine("Cependant attention! Vous devez vaincre la Police qui rode dans cette station !");
+            Console.WriteLine("Cependant attention! Vous devez semer la Police qui rode dans cette station !");
             Console.WriteLine("");
             Console.WriteLine("A chaque victoire vous engrangerez des points de vie et augmenterez la puissance de votre attaque !!");
             Console.ReadKey();
@@ -100,19 +101,6 @@ namespace AssemblyGame
             Console.ReadKey();
 
 
-            Case();
-
-
-
-
-
-
-
-
-        }
-
-        public void Case()
-        {
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("");
             Console.WriteLine("Quel est votre nom ?");
@@ -125,55 +113,68 @@ namespace AssemblyGame
             Console.WriteLine("");
 
             //Hero
-            Hero hero = new Hero(n, 3, 15, 0, 0);
+            Hero hero1 = new Hero(n, 3, 15, 0, 0);
 
             //Enemy Controleur
-            Controleur Leur1 = new Controleur("Leur1", 2, 5, 1, 2);
-            Controleur Leur2 = new Controleur("Leur2", 3, 7, 2, 3);
+            Controleur controleur1 = new Controleur("Controleur1", 2, 5, 1, 2);
+            Controleur controleur2 = new Controleur("Controleur2", 3, 7, 2, 3);
 
             //Enemy Police
-            Police Keuf1 = new Police("Keuf1", 4, 9, 4, 4);
-            Police Keuf2 = new Police("Keuf2", 7, 18, 6, 5);
+            Police police1 = new Police("Police1", 4, 9, 4, 4);
+            Police police2 = new Police("Police2", 7, 18, 6, 5);
+
 
             //Affichage Map
             Map map1 = new Map(7, 7);
-            map1.Afficher(hero);
+            map1.Afficher(hero1, controleur1);
             Game game1 = new Game();
-            game1.MenuMove(hero, map1);
+            game1.MenuMove(hero1, controleur1, map1);
 
-            if (hero.X == Leur1.X && hero.Y == Leur1.Y)
+            
+
+            //Déclenchement de combats si le héro rencontre l'ennemie
+            Case(hero1, controleur1);
+
+        }
+
+        public void Case(Hero hero1, Controleur controleur1)
+        {
+
+            if (hero1.X == controleur1.X && hero1.Y == controleur1.Y)
+            {
+                Debut.BeforeControleur();
+                Battle.WithControleur(hero1, controleur1);
+
+                hero1.LevelUp();
+            }
+                return;
+            /*
+            else if (hero.X == controleur.X && hero.Y == controleur.Y)
             {
                 Histoire.BeforeControleur();
-                Battle.WithControleur(hero, Leur1);
+                Battle.WithControleur(hero, controleur);
 
                 hero.LevelUp();
             }
-            else if (hero.X == Leur2.X && hero.Y == Leur2.Y)
-            {
-                Histoire.BeforeControleur();
-                Battle.WithControleur(hero, Leur2);
-
-                hero.LevelUp();
-            }
-
-            else if (hero.X == Keuf1.X && hero.Y == Keuf1.Y)
+            */
+            /*else if (hero1.X == Keuf1.X && hero1.Y == Keuf1.Y)
             {
                 Histoire.BeforePolice();
-                Battle.WithPolice(hero, Keuf1);
+                Battle.WithPolice(hero1, Keuf1);
 
-                hero.LevelUp();
-            }
-
-            else if (hero.X == Keuf2.X && hero.Y == Keuf2.Y)
+                hero1.LevelUp();
+            }*/
+            /*
+            else if (hero.X == police.X && hero.Y == police.Y)
             {
                 Histoire.BeforePolice();
-                Battle.WithPolice(hero, Keuf2);
+                Battle.WithPolice(hero, police);
 
                 hero.LevelUp();
 
                 Histoire.TheEnd();
 
-            }
+            }*/
 
 
 

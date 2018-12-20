@@ -14,7 +14,7 @@ namespace AssemblyGame
                 Environment.Exit(0);
             }
         }
-        public static void PrintTheStats(Hero person1, Enemy person2)
+        public static void AfficherLesStats(Hero person1, Enemy person2)
         {
             person1.PrintStats();
             Console.WriteLine("");
@@ -26,7 +26,7 @@ namespace AssemblyGame
         {
             while (leur.Health > 0 && hero.Health > 0)
             {
-                PrintTheStats(hero, leur);
+                AfficherLesStats(hero, leur);
 
                 hero.YourTurn(hero.Choice(), hero);
 
@@ -49,7 +49,7 @@ namespace AssemblyGame
         {
             while (keuf.Health > 0 && hero.Health > 0)
             {
-                PrintTheStats(hero, keuf);
+                AfficherLesStats(hero, keuf);
 
                 hero.YourTurn(hero.Choice(), hero);
 

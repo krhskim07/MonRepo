@@ -1,7 +1,7 @@
 ﻿using System;
 namespace AssemblyGame
 {
-    class Hero : Person
+    class Hero : Personnage
     {
         public int healLvl = 7, maxHealth = 15;
         public int numOfAttack;
@@ -15,8 +15,8 @@ namespace AssemblyGame
         {
             Console.WriteLine("Vous êtes passé au niveau supérieur ! !");
             Console.WriteLine("Attaque +3");
-            Console.WriteLine("Force Max +10");
             Console.WriteLine("Guérison +5");
+            Console.WriteLine("Force Max +10");
             Console.ReadLine();
             Console.Clear();
 
@@ -45,9 +45,9 @@ namespace AssemblyGame
         }
 
 
-        // Methods used in Battle ----------------------------------------
+        // Méthodes utilisé pour les batailles ----------------------------------------
 
-        public int Choice() // Produces heros decision
+        public int Choice() 
         {
             bool correctInput = true;
             int choice = 0, choice2;
@@ -61,22 +61,22 @@ namespace AssemblyGame
                 bool test = int.TryParse(Console.ReadLine(), out choice);
                 if (!test || choice > 3 || choice <= 0)
                 {
-                    Console.WriteLine("Ce n'est pas une option correct, réessayez!");
+                    Console.WriteLine("Je n'ai pas compris votre choix , réessayez!");
                     Console.ReadLine();
                     Console.Clear();
                     continue;
                 }
 
-                if (choice == 3) // Specials menu
+                if (choice == 3) 
                 {
                     Console.WriteLine("Choisir Spécial:");
                     Console.WriteLine("1. Attaque MultiTicket");
-                    Console.WriteLine("2. <--- Revenir au menu précédent");
+                    Console.WriteLine("2. Revenir au menu précédent");
 
                     bool test2 = int.TryParse(Console.ReadLine(), out choice2);
                     if (!test2 || choice2 > 3 || choice2 <= 0)
                     {
-                        Console.WriteLine("Ce n'est pas une option correct, réessayez!");
+                        Console.WriteLine("Je n'ai pas compris votre choix, réessayez!");
                         Console.ReadLine();
                         Console.Clear();
                         continue;
@@ -103,7 +103,7 @@ namespace AssemblyGame
             if (decision == 1)
             {
                 NormAttack(target);
-                Console.WriteLine("Vous avez lancé l'attaque je vais là non je vais par là!");
+                Console.WriteLine("Vous avez lancé l'attaque  : je guette si il y a des controleurs !");
             }
 
             if (decision == 2)

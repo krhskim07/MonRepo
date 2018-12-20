@@ -1,0 +1,25 @@
+﻿<Properties StartupConfiguration="{10810023-5785-4271-BB73-33A9849B01C9}|Default">
+  <MonoDevelop.Ide.ItemProperties.AssemblyGame PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AssemblyGame/Maps.cs">
+    <Files>
+      <File FileName="AssemblyGame/Program.cs" Line="9" Column="33" />
+      <File FileName="AssemblyGame/Menu.cs" Line="120" Column="31" />
+      <File FileName="AssemblyGame/Person.cs" Line="24" Column="54" />
+      <File FileName="AssemblyGame/Maps.cs" Line="33" Column="10" />
+      <File FileName="AssemblyGame/Hero.cs" Line="9" Column="58" />
+      <File FileName="AssemblyGame/Controleur.cs" Line="15" Column="25" />
+      <File FileName="AssemblyGame/Police.cs" Line="18" Column="28" />
+      <File FileName="AssemblyGame/Battle.cs" Line="26" Column="10" />
+      <File FileName="AssemblyGame/Histoire.cs" Line="28" Column="1" />
+      <File FileName="AssemblyGame/Enemy.cs" Line="24" Column="54" NotebookId="1" />
+      <File FileName="AssemblyGame/Case.cs" Line="13" Column="19" NotebookId="1" />
+      <File FileName="AssemblyGame/Game.cs" Line="26" Column="10" NotebookId="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
